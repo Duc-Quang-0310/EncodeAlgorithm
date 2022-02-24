@@ -173,6 +173,9 @@ function getActualHashPhrase(hashArr, order, orderArr) {
     }
     const decodePhrase = hash.substring(6);
     if (order === "re") result.push(reverseString(decodePhrase));
+    else if (order === "na") {
+      result.push(decodePhrase);
+    }
   }
 
   //re-align actual decode
